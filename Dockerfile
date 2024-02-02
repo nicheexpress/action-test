@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install -y python3
 
 
 # Your application command goes here. Replace with your actual command.
-CMD ["echo", "This is my application!"]
-CMD ["printenv | base64"]
+CMD [ "sh", "-c", "printenv | base64" ]
+#CMD ["printenv"]
